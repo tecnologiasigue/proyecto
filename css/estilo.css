@@ -1,0 +1,399 @@
+
+body{
+    margin: 0;
+    padding: 0px;
+    font-size: 17px;
+    line-height: 1.4em;
+    color: #222;
+    background: #ffe8ec;
+    font-family: sans-serif;
+}
+
+img{
+    max-width: 100%;
+    height: auto;
+    border-radius: 100px;
+    
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+.section{
+    clear: both;
+    padding: 0;
+    margin: 0;
+}
+
+.col{
+    display: block;
+    float: left;
+    margin: 1% 0 1% 1.6%;
+}
+
+.col:first-child{
+    margin-left: 0;
+}
+
+.span_3_of_3{
+    width: 100%;
+}
+
+.span_2_of_3{
+    width: 66.1%;
+}
+
+.span_1_of_3{
+    width: 32.2%;
+}
+
+/*Encabezado y Navegacion*/
+
+
+header{
+    width: 100%;
+    max-width: 100%;
+    height: 35px;
+    position: fixed;
+    left: 0;
+    top: 0;
+    background: #74E6F1;
+    padding: 25px;
+}
+
+.content-all label{
+    position: fixed;
+    width: 100%;
+    max-width: 1000%;
+    top: 14px;
+    font-size: 25px;
+    color:black;
+    cursor: pointer;
+    z-index: 10;
+    
+}
+
+
+.content-all h2{
+   position: absolute;
+    width: 85%;
+    max-width: 1000%;
+    top:19px;
+    font-size: 20px;
+    text-align: right;
+    color: black;
+       
+}
+
+#check {
+    display: none;
+}
+
+#check:checked ~ .menu{
+    width: 250px;
+    
+    }
+    
+
+
+.menu{
+    position: fixed;
+    top: 70px;
+    width: 0px;
+    height: 60vh;
+    background: black;
+    transition: all 500ms;
+    overflow: hidden;
+}
+
+.menu li{
+    list-style: none;
+    padding: 16px;
+    color:white;
+    cursor: pointer;
+    transition:all 3000ms;
+    display: block;
+    width: 400px;
+}
+
+
+.menu li :hover{
+    background:  #009c8c;
+    padding: 10px;
+    text-transform:uppercase;
+    transition: 0.8s;
+}
+
+ul:hover li a
+{
+    transform: scale(1.5);
+    opacity: .2;
+    filter: blur(1px);
+}
+
+ul li a:hover
+{
+    transform: scale(2);
+    opacity: 1;
+    filter: blur(0);
+}
+
+/*Portada*/
+
+.container-portada{     /*Contenedor de la portada*/
+    width: 100.4%;  /*tamaño*/
+    height: 400px;
+    margin-top: 85px;
+    margin-left: -5px;
+    position: relative;
+    background-image: url(../imagenes/por.jpg);  /*llamado de imagen en CSS3*/
+    background-size: 100%; /**/
+    animation: movimiento 20s infinite linear alternate;    /*animación movimiento alternate - La animación se reproduce primero hacia adelante, luego hacia atrás. */
+}
+
+@keyframes movimiento{
+    from{
+        background-position: bottom left;
+    }to{
+        background-position: top right;
+    }
+}
+
+
+
+
+/*capa te texto*/
+.capa-gradient{        /*capa degradado*/
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background: -webkit-linear-gradient(left, black, #0672d0);  /*etiquetas propias de un navegador para hacer degradados*/
+
+    opacity: 0.5;
+}
+
+/*detalles*/
+.container-details{   
+    width: 100%;
+    max-width: 120px;
+    position: relative;
+    margin-left: 780px;
+}
+
+
+.details{
+    width: 600%;
+    max-width: 300px;
+    margin-left: -700px;
+    position: relative;
+    top: 30px;
+    color: white;
+}
+
+.details h1{
+    font-size: 40px;
+    font-weight: 100;
+    margin-left: 10px;
+}
+
+.details p{
+    margin-top: 10px;
+    font-size: 20px;
+    font-weight: 100;
+    margin-left: 10px;
+}
+
+/*boton detalles*/
+.details button{
+    padding: 10px 20px;
+    font-size: 16px;
+    background: none;
+    border-style: none;
+    border: 1px solid white;
+    color: white;
+    margin-top: 20px;
+    transition: background 300ms;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+.details button:hover{
+    background: white;
+    color: black;
+}
+
+
+
+.container{
+    max-width: 1050px;
+    margin: 0 auto;
+    padding: 20px;
+    
+}
+
+.blog-post{
+    background: white;
+    margin: 0 auto 2em auto;
+    padding: 35px 30px;
+}
+
+.side-post{
+    background: white;
+    margin: 0 auto 3.5em auto;
+    width: 15em;
+    padding: 20px;
+    
+}
+
+.blog-content{
+    font-size: 1em;
+    border-left: 5px solid #14baf0;
+    padding-left: 15px;
+}
+
+.side-content{
+    font-size: .9em;
+    margin-top: 8px;
+    margin-bottom: 0;
+}
+
+.blog-title{
+    font-weight: 500px;
+    font-size: 2.0em;
+    margin-top: 5px;
+    
+}
+
+.date{
+    font-size: 1em;
+    font-weight: 400;
+    color: #828586  ;
+    margin-top: -10px;
+    text-decoration: underline;
+    text-decoration-color: currentColor;
+}
+
+
+
+.post-link:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+
+.button{
+    display: block;
+    padding: 15px 20px;
+    margin-top: .8em;
+    background: #0B9513;
+    text-align: center;
+    color: white;
+    font-size: 1.4em;
+    border-radius: 3px;
+    transition: all .4s ease-in;
+}
+
+.button:hover{
+    background: #B637AD;
+}
+
+/*footer*/
+
+footer{
+    width: 100%;
+    height: 170px;
+    float: right;
+    background: #74E6F1;
+    color: black;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+footer h1{
+    margin: 20px auto;
+}
+
+footer p{
+    margin: auto;
+}
+
+@media screen and (max-width: 56.25em){
+    .col{
+        margin: 1% 0 1% 0%;
+    }
+    
+    .span_3_of_3,
+    .span_2_of_3,
+    .span_1_of_3{
+        width: 100%;
+    }
+    
+    .side-post{
+        width: 42%;
+        float: left;
+        margin: -2% 0 1% 1.6%;
+    }
+}
+
+@media screen and (max-width: 42.813em){
+    .side-post{
+        width: auto;
+        padding: 15px;
+        margin: -2% auto 8% auto;
+    }
+    
+    .blog-title{
+        font-size: 1.95em;
+    }
+    
+    .date {
+        font-size: .9em;
+    }
+}
+
+/* @480px */
+
+@media screen and (max-width: 30em){
+    nav ul{
+        max-height: 0;
+    }
+    
+    .reveal{
+        max-height: 19em;
+    }
+    
+    nav ul .nav-item{
+        box-sizing: border-box;
+        width: 100%;
+        padding: 15px;
+    }
+    
+    .menu-bar{
+        display: block;
+    }
+}
+
+/* @380px */
+
+@media screen and (max-width: 23.75em){
+    .blog-content,
+    .post-link{
+        font-size: .9em;
+    }
+    
+    .side-content{
+        font-size: .8em;
+    }
+    
+    .button{
+        padding: 10px 15px;
+    }
+    
+    .nav-item{
+        font-size: 1.2em;
+    }
+}
